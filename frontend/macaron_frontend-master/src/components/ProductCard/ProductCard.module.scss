@@ -1,0 +1,96 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    width: 370px;
+    height: 460px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  
+    .productImage {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      animation: fadeIn 0.5s forwards;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    .textBlock {
+      padding-top: 21px;
+      padding-left: 21px;
+  
+      h3 {
+        color: #292929;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+      }
+  
+      p {
+        margin-top: 14px;
+        font-family: 'Proxima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #292929;
+      }
+    }
+  
+    .priceAndCart {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0 21px 10px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  
+      .price {
+        color: #E7426A;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        margin: 0;
+      }
+  
+      .cartLink {
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+  
+        p {
+          color: #000;
+          font-size: 14px;
+          font-family: 'Montserrat';
+          font-style: normal;
+          padding-top: 4px;
+  
+          &:hover {
+            color: #E7426A;
+            transition: 100ms ease-in;
+          }
+        }
+  
+        .cartIcon {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  
+  .image_con {
+    overflow: hidden;
+    height: 300px;
+    width: 370px;
+  }
