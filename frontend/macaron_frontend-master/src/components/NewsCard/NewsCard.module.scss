@@ -69,3 +69,15 @@
         margin-top: 30px;
     }
   }
+
+  @media (max-width: 800px) {
+    .newscard {
+        width: 90%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .newstext{
+        margin-top: 30px;
+        width: 100%;
+    }
+  }

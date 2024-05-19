@@ -4,11 +4,10 @@ import Image from 'next/image';
 import styles from './PromoCard.module.scss';
 
 interface PromoCardProps {
-  promo: any; // Замените 'any' на ваш тип данных promo
+  promo: any;
 }
 
 export default function PromoCard({ promo }: PromoCardProps) {
-  // Проверка на promo, если нужно
   if (!promo) {
     return <div>Loading...</div>;
   }

@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   }
 
   const handleAddToCart = async () => {
-    await addToCart(product.id, 1, product.price);
+    await addToCart(product.id, 1, product.price, product.title, product.image);
   };
 
   return (

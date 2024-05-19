@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Burger from '@/components/Burger';
 import ReactQueryProvider from '@/providers/react-query';
 
 const alegreya = Alegreya({
@@ -36,6 +37,7 @@ export default function RootLayout({
         <html lang="ru" className={`${alegreya.variable} ${roboto.variable}`}>
             <body className="wrapper">
                 <ReactQueryProvider>
+                <Burger/>
                     <Header />
                     <main>{children}</main>
                     <Footer />

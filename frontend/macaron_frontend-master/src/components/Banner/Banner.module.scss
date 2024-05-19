@@ -71,3 +71,47 @@
   .banner:hover .image:hover {
     transform: translateX(1);
   }
+
+  .image_mobile {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 900px){
+  .image_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 900px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+
+      img {
+        left: auto;
+        max-height: 100%;
+        width: 80%;
+        min-width: 80%;
+        height: auto;
+      }
+  }
+
+  .image {
+    display: none;
+  }
+
+  .text_block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .banner_logo{
+    margin-top: 20px;
+  }
+}

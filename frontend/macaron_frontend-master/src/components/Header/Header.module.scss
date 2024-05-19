@@ -127,3 +127,9 @@
       transform: translateY(0);
     }
   }
+
+  @media (max-width: 900px) {
+    .header {
+        display: none;
+    }
+}

@@ -70,3 +70,24 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 600px) {
+  .bestcard {
+    width: 180px;
+    height: 280px;
+
+    img {
+      width: 180px;
+      height: 200px;
+    }
+}
+.besttitle {
+  margin-top: 15px;
+  height: 100%;
+}
+
+.besttext {
+  width: 180px;
+  margin-top: 10px;
+}
+}

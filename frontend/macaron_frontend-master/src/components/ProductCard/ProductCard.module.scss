@@ -94,3 +94,25 @@
     height: 300px;
     width: 370px;
   }
+
+@media (max-width: 800px) {
+  .productCard {
+    width: 300px;
+    height: 400px;
+
+    .productImage{
+      height: 250px;
+    }
+
+    .textBlock {
+      padding-top: 15px;
+      padding-left: 10px;
+    }
+  }
+
+  .image_con {
+    overflow: hidden;
+    height: 250px;
+    width: 370px;
+  }
+}

@@ -2,6 +2,7 @@ import { Category } from '../types/category'
 import { Product } from "../types/product"
 import { Promo } from "../types/promo"
 import { News } from "../types/news"
+import { Cart } from '@/types/cart'
 
 const BASE = 'http://127.0.0.1:3000/api'
 
@@ -26,5 +27,11 @@ export async function fetchPromos(): Promise<Promo[]> {
   export async function fetchCategory(): Promise<Category[]> {
     const res = await fetch(`${BASE}/category`);
     if (!res.ok) throw new Error('Error fetching product');
+    return res.json();
+  }
+
+  export async function fetchCart(): Promise<Cart[]> {
+    const res = await fetch(`${BASE}/cart`);
+    if (!res.ok) throw new Error('Error fetching cart');
     return res.json();
   }

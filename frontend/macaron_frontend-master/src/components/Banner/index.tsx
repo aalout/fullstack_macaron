@@ -15,6 +15,7 @@ export default function Banner() {
     <p>Пирожные макаронс и другие десерты из натуральных ингредиентов, приготовленные с любовью</p>
     </div>
   </div>
+  <Image src="/assets/icons/banner_image123.svg" width={600} height={600} alt="Banner" className={styles.image_mobile }/>
 </div>
       </div>
     )

@@ -6,6 +6,7 @@ import Product from "@/components/Product";
 import TheBest from "@/components/TheBest";
 import Holidays from "@/components/Holidays";
 import News from "@/components/News";
+import Burger from "@/components/Burger";
 
 export default function Home() {
   return (

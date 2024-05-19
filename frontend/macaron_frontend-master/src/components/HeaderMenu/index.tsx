@@ -3,8 +3,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './HeaderMenu.module.scss';
+import { useCart } from '@/hooks/useCart';
 
 export default function HeaderMenu() {
+  const { data } = useCart();
+  const cartCount = data ? data.length : 0;
+
   return (
     <div className={styles.header_con}>
 
@@ -48,13 +52,13 @@ export default function HeaderMenu() {
         </li>
         <li className={styles.navListItemRight}>
             <ul className={styles.listPlace}>
-            <li className={styles.listItemPlace}><Link href="#"><Image
+            <li className={styles.listItemPlace}><Link href="/cart"><Image
                 width={24}
                 height={24}
                 src="/assets/icons/bag.png"
                 alt="bag"
             /></Link></li>
-            <li className={styles.listItemPlace}><Link className={styles.text} href="#">В корзине (0 товара)</Link></li>
+            <li className={styles.listItemPlacecart}><Link className={styles.text} href="/cart">В корзине ({cartCount} товара)</Link></li>
             </ul>
         </li>
       </ul>

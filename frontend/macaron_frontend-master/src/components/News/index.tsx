@@ -19,18 +19,30 @@ const News = () => {
   ));
 
   const handleNext = () => {
-    if (currentIndex < newsCards.length - 4) {
-      setCurrentIndex((prevIndex) => prevIndex + 1);
+    if (window.innerWidth <= 600) {
+      if (currentIndex < newsCards.length - 1) {
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }
+    } else {
+      if (currentIndex < newsCards.length - 4) {
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }
     }
   };
-
+  
   const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((prevIndex) => prevIndex - 1);
+    if (window.innerWidth <= 600) {
+      if (currentIndex > 0) {
+        setCurrentIndex((prevIndex) => prevIndex - 1);
+      }
+    } else {
+      if (currentIndex > 0) {
+        setCurrentIndex((prevIndex) => prevIndex - 1);
+      }
     }
   };
 
-  const dots = Array(newsCards.length - 3).fill(0);
+  const dots = Array(newsCards.length - (window.innerWidth <= 600 ? 0 : 3)).fill(0);
 
   return (
     <div>
@@ -39,11 +51,11 @@ const News = () => {
       </div>
       <div className={styles.newsCon}>
         <div className={styles.news}>
-          {newsCards.slice(currentIndex, currentIndex + 3)}
+        {newsCards.slice(currentIndex, currentIndex + (window.innerWidth <= 600 ? 1 : 3))}
         </div>
         <div className={styles.arrows}>
           <button onClick={handlePrev} disabled={currentIndex === 0}>&lt;</button>
-          <button onClick={handleNext} disabled={currentIndex === newsCards.length - 4}>&gt;</button>
+          <button onClick={handleNext} disabled={currentIndex === newsCards.length - (window.innerWidth <= 600 ? 1 : 4)}>&gt;</button>
         </div>
         <div className={styles.indicator}>
           {dots.map((_, index) => (
