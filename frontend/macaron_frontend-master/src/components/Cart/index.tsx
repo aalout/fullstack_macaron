@@ -58,8 +58,8 @@ useEffect(() => {
                   <td>
                      <Image src={`/assets/images/product_card/${cart.image}`} height={80} width={80} alt="product_image" className={styles.tableImg} />
                   </td>
-                  <td>{cart.title}</td>
-                  <td>{cart.quantity}</td>
+                  <td className={styles.itemTitle}>{cart.title}</td>
+                  <td className={styles.quantity}>{cart.quantity}</td>
                   <td className={styles.tablePrice}>Цена: {cart.price} руб.</td>
                   <td>
                      <button onClick={() =>

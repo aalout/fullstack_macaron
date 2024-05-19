@@ -7,11 +7,13 @@ import TheBest from "@/components/TheBest";
 import Holidays from "@/components/Holidays";
 import News from "@/components/News";
 import Burger from "@/components/Burger";
+import MenuA from "@/components/MenuA";
 
 export default function Home() {
   return (
     <div>
       <Banner/>
+      <MenuA/>
       <Menu/>
       <Promo/>
       <Holidays/>

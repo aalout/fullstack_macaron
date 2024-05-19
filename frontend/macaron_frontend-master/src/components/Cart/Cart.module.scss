@@ -167,3 +167,17 @@
       }
     }
 }
+
+@media (max-width:600px) {
+    .quantity {
+        display: none;
+    }
+    .itemTitle {
+        display: none;
+    }
+    .finalPrice {
+        width: 400px;
+        padding-top: 110px;
+        padding-left: 50px;
+    }
+}

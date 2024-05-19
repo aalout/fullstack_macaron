@@ -9,7 +9,6 @@ import { useProductQuery } from '../../hooks/useProductsQuery';
 export default function Product() {
   const { data: products } = useProductQuery();
 
-  // Обработка загрузки и отображение только первых 6 карточек
   if (!products) {
     return <div>Загрузка...</div>;
   } else {
