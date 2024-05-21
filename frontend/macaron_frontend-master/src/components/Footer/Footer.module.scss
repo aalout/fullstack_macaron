@@ -147,3 +147,13 @@
       padding: 30px 100px;
     }
   }
+
+  @media (max-width: 600px) {
+    .footer {
+      padding: 30px 10px;
+      flex-direction: column;
+    }
+    .nav {
+      display: none;
+    }
+  }

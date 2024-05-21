@@ -64,24 +64,24 @@ export default function HeaderMenu() {
       </ul>
 
       <ul className={styles.listSocial}>
-            <li className={styles.listItemSocial}><Image
+            <li className={styles.listItemSocial}><Link href='#'><Image
                 width={24}
                 height={24}
                 src="/assets/icons/tg.png"
                 alt="tg"
-            /></li>
-            <li className={styles.listItemSocial}><Image
+            /></Link></li>
+            <li className={styles.listItemSocial}><Link href='#'><Image
                 width={24}
                 height={24}
                 src="/assets/icons/vk.png"
                 alt="vk"
-            /></li>
-            <li className={styles.listItemSocial}><Image
+            /></Link></li>
+            <li className={styles.listItemSocial}><Link href='#'><Image
                 width={24}
                 height={24}
                 src="/assets/icons/ok.png"
                 alt="ok"
-            /></li>
+            /></Link></li>
             </ul>
     </div>
   );

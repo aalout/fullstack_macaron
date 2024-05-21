@@ -58,10 +58,31 @@
     .product {
       grid-template-columns: repeat(3, 1fr);
     }
+    .categoryButtons {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+  }
   }
 
 @media (max-width: 1250px) {
   .product {
     grid-template-columns: repeat(2, 1fr);
   }
+  .categoryButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+}
+
+@media (max-width: 600px) {
+  .product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .categoryButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
 }

@@ -10,32 +10,32 @@ export default function MenuA() {
         <div className={styles.mainDiv}>
             <Link className={styles.mLink} href="#"><div className={styles.mDiv}>
                 <p>Готовые наборы</p>
-                <Image src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
+                <Image className={styles.arrow} src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
             </div>
             </Link>
             <Link className={styles.mLink} href="#"><div className={styles.mDiv}>
                 <p>Собрать свой набор</p>
-                <Image src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
+                <Image className={styles.arrow} src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
             </div>
             </Link>
             <Link className={styles.mLink} href="#"><div className={styles.mDiv}>
                 <p>Набор с индивидуальной печатью</p>
-                <Image src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
+                <Image className={styles.arrow} src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
             </div>
             </Link>
             <Link className={styles.mLink} href="#"><div className={styles.mDiv}>
                 <p>Свадебные предложения</p>
-                <Image src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
+                <Image className={styles.arrow} src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
             </div>
             </Link>
             <Link className={styles.mLink} href="#"><div className={styles.mDiv}>
                 <p>Корпоративные подарки</p>
-                <Image src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8}/>
+                <Image className={styles.arrow} src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8}/>
             </div>
             </Link>
             <Link className={styles.mLink} href="#"><div className={styles.mDiv}>
                 <p>Для юридических лиц</p>
-                <Image src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
+                <Image className={styles.arrow} src="/assets/icons/arrow_menu.svg"  alt='menu_arrow' width={12} height={8} />
             </div>
             </Link>
         </div>
