@@ -12,13 +12,10 @@ export const updateQuantity = async (id: number, quantity: number) => {
       });
   
       if (response.ok) {
-        console.log('Количество товара изменено');
       } else {
         const error = await response.json();
-        console.error('Ошибка изменения количества товара:', error);
       }
     } catch (error) {
-      console.error('Ошибка сервера:', error);
     }
   };
   

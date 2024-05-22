@@ -5,19 +5,24 @@ import Link from 'next/link';
 import styles from './ProductCard.module.scss';
 import { Product } from "../../types/product";
 import { addToCart } from '@/hooks/addToCart';
+import { useState } from 'react';
 
 interface ProductCardProps {
   product: Product;
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  const [notification, setNotification] = useState(false);
+
   if (!product) {
     return <div>Loading...</div>;
   }
 
-  const handleAddToCart = async () => {
-    await addToCart(product.id, 1, product.price, product.title, product.image);
-  };
+const handleAddToCart = async () => {
+  await addToCart(product.id, 1, product.price, product.title, product.image);
+  setNotification(true);
+  setTimeout(() => setNotification(false), 2000);
+};
 
   return (
     <div className={styles.productCard}>
@@ -50,6 +55,9 @@ export default function ProductCard({ product }: ProductCardProps) {
             />
             <p>В корзину</p>
           </button>
+        </div>
+        <div className={`${styles.popup} ${notification ? styles.show : ''}`}>
+            Товар добавлен в корзину!
         </div>
     </div>
   );

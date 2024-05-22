@@ -11,12 +11,9 @@ export const deleteFromCart = async (id: number) => {
       });
   
       if (response.ok) {
-        console.log('Товар удален из корзины');
       } else {
         const error = await response.json();
-        console.error('Ошибка удаления товара:', error);
       }
     } catch (error) {
-      console.error('Ошибка сервера:', error);
     }
   };

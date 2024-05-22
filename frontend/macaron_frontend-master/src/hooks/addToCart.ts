@@ -16,15 +16,12 @@ export const addToCart = async (productId: number, quantity: number, price: numb
 
     if (response.ok) {
       const createdCart = await response.json();
-      console.log('Товар добавлен в корзину:', createdCart);
       return createdCart;
     } else {
       const error = await response.json();
-      console.error('Ошибка добавления в корзину:', error);
       throw new Error(error.message);
     }
   } catch (error) {
-    console.error('Ошибка сервера:', error);
     throw error;
   }
 };
